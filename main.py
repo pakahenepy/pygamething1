@@ -9,7 +9,7 @@ font = pygame.font.SysFont(None, 72)
 brick_color = (250, 50, 0)
 bricks = []
 for row in range(3):
-  for col in range(5):
+  for col in range(10):
     brick = pygame.Rect(col * 80 + 10, row * +60, 60, 20)
     bricks.append(brick)
 paddle_rect = pygame.Rect(300,500,50,20)
@@ -24,7 +24,7 @@ gameover = False
 clock = pygame.time.Clock()
 
 #game loop starts here
-while not gameover:2
+while not gameover:
     clock.tick(60)
     for event in pygame.event.get():
         if event.type == pygame.KEYDOWN:
